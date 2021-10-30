@@ -25,3 +25,7 @@ int DaysInYearRange(int startYear, int endYear)
 		sum += DaysInYear(i);
 	return sum;
 }
+int SeconsInHours(int hours)
+{
+	return hours * 60;
+}
