@@ -18,3 +18,10 @@ int DaysInYear(int year)
 	else
 		return 365;
 }
+int DaysInYearRange(int startYear, int endYear)
+{
+	int sum = 0;
+	for (int i = startYear; i <= endYear; i++)
+		sum += DaysInYear(i);
+	return sum;
+}
