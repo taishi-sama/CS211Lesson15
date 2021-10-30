@@ -11,3 +11,10 @@ bool LaterInYear(int day1, int month1, int day2, int month2)
 	else
 		return month1 > month2;
 }
+int DaysInYear(int year)
+{
+	if (is_leap(year))
+		return 366;
+	else
+		return 365;
+}
